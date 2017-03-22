@@ -22,3 +22,4 @@ django-select2<5.0six
 djangocms-forms
 django-bootstrap3
 
+git+git://github.com/jschneier/django-storages.git#egg=django-storages

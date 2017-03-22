@@ -39,3 +39,10 @@ MEDIA_URL = '/media/'
 
 STATIC_URL = '/static/'
 CKEDITOR_UPLOAD_PATH = "uploads/"
+
+#Storage Settings
+DEFAULT_FILE_STORAGE = 'storages.backends.gs.GSBotoStorage'
+GS_ACCESS_KEY_ID = 'YourID'
+GS_SECRET_ACCESS_KEY = 'YourKEY'
+GS_BUCKET_NAME = 'YourBucket'
+STATICFILES_STORAGE = 'storages.backends.gs.GSBotoStorage'
