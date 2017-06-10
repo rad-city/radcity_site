@@ -135,6 +135,7 @@ INSTALLED_APPS += (
     'bootstrap3',
     'djangocms_forms',
     'pdxrad',
+    'sass_processor',
 )
 
 LANGUAGES = (
@@ -168,7 +169,8 @@ CMS_TEMPLATES = (
     ## Customize this
     ('page.html', 'Basic Page'),
     ('front-page/base.html', 'Landing Page'),
-    ('rad-welcome/base.html', 'RAD Welcome')
+    ('rad-welcome/base.html', 'RAD Welcome'),
+    ('rad-tag-2017/index.html', 'RAD 2017')
 
 )
 

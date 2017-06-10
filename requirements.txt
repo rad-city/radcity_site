@@ -24,3 +24,8 @@ django-bootstrap3
 
 git+git://github.com/jschneier/django-storages.git#egg=django-storages
 boto
+mysqlclient
+libsass 
+django-compressor 
+django-sass-processor
+

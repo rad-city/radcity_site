@@ -1,0 +1,121 @@
+{% extends "base/base.html" %}
+{% load cms_tags %}
+
+{% block title %}HERPDERP{% endblock title %}
+
+{% block content %}
+<main class="main">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__content">
+      <div class="wrapper">
+        <figure class="hero__gfx">
+          <img class="hero__img" src="/media/logo/logo.svg" alt="RAD Logo" title="Radical Action Democracy" />
+        </figure>
+
+        <div class="hero__text">
+          {% placeholder ' Mission Statement' %}
+        </div>
+      </div>
+    </div>
+
+    <a href="#scroll-down" class="hero__arrow arrow"></a>
+  </section>
+  <!-- /HERO -->
+
+
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="wrapper">
+      <ul class="features__list">
+        <li>
+          <a href="#feature" class="features__link">
+            <article class="features__item">
+              <img class="features__img" src="/media/features/book.svg" alt="Book" />
+              <h1 class="features__title">Required <br/>reading</h1>
+              <p class="features__desc">The official RAD rebel study guide. Read up. Pass it on.</p>
+              <figure class="features__arrow"></figure>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a href="#feature" class="features__link">
+            <article class="features__item">
+              <img class="features__img" src="/media/features/planet.svg" alt="Book" />
+              <h1 class="features__title">About <br/>RAD</h1>
+              <p class="features__desc">Our mission, history, and plans for the future. </p>
+              <figure class="features__arrow"></figure>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a href="#feature" class="features__link">
+            <article class="features__item">
+              <img class="features__img" src="/media/features/plane.svg" alt="Book" />
+              <h1 class="features__title">Get <br/>In Touch</h1>
+              <p class="features__desc">Organizers, activists, and curious citizens: Speak up!</p>
+              <figure class="features__arrow"></figure>
+            </article>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- FEATURES -->
+
+
+
+  <!-- TITLE -->
+  <header class="title title--inverted title--bg">
+    <h2 class="title__content">
+      History
+    </h2>
+  </header>
+  <!-- /TITLE -->
+
+
+
+  <!-- TEXT -->
+  <header class="text text--inverted" style="background-image: url(/media/title/bg-history.jpg)">
+    <div class="wrapper">
+      <div class="text__content">
+        <div class="wysiwyg">
+          {% placeholder 'About' %}
+        </div>
+      </div>
+      <a href="#about" class="text__c2a btn">
+        About
+        <span class="btn__arrow"></span>
+      </a>
+    </div>
+  </header>
+  <!-- /TEXT -->
+
+
+
+  <!-- TITLE -->
+  <header class="title title--compact" style="background-image: url(/media/title/bg-history.jpg)">
+    <h2 class="title__content">
+      Subscribe
+    </h2>
+  </header>
+  <!-- /TITLE -->
+
+
+
+  <!-- SUBSCRIBE -->
+  <form method="get" action="/" class="subscribe">
+    <div class="wrapper">
+      <h4 class="subscribe__desc">Want to stay informed about radical opportunities in Portland?  We’ll send you info on our events and updates about our cause.</h4>
+      <input type="email" placeholder="E-mail" class="subscribe__input" />
+      <button type="submit" class="subscribe__c2a btn">Submit</button>
+    </div>
+  </form>
+  <!-- /SUBSCRIBE -->
+
+
+
+</main>
+<!-- /MAIN -->
+{% endblock content %}
