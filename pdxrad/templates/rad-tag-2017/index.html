@@ -1,5 +1,5 @@
 {% extends "base/base.html" %}
-{% load cms_tags %}
+{% load cms_tags staticfiles %}
 
 {% block title %}HERPDERP{% endblock title %}
 
@@ -10,7 +10,7 @@
     <div class="hero__content">
       <div class="wrapper">
         <figure class="hero__gfx">
-          <img class="hero__img" src="/media/logo/logo.svg" alt="RAD Logo" title="Radical Action Democracy" />
+          <img class="hero__img" src="{% static '/media/logo/logo.svg' %}" alt="RAD Logo" title="Radical Action Democracy" />
         </figure>
 
         <div class="hero__text">
