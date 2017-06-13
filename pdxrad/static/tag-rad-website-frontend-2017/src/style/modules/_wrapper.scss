@@ -1,0 +1,24 @@
+/**
+ * Wrapper
+ *
+ * @section Modules
+ * @author ljd
+ */
+.wrapper {
+	max-width: $site-max-width;
+	min-width: $site-min-width;
+	padding: 0 spacer-size(1);
+	margin: 0 auto;
+
+	&:after {
+		@extend %clearfix;
+	}
+
+	@include media(tabletV) {
+		padding: 0 spacer-size(2);
+	}
+}
+
+.wrapper--wide {
+	max-width: $site-max-width-wide;
+}
