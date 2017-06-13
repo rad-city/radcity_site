@@ -1,8 +1,8 @@
-{% load static cms_tags menu_tags %}
+{% load static cms_tags menu_tags staticfiles %}
 <header class="header">
   <div class="wrapper wrapper--wide">
     <a href="/" class="header__logo">
-      <img class="header__logo-img" src="/media/logo/mark.png" alt="RAD Logo mark" title="Radical Action Democracy" />
+      <img class="header__logo-img" src="{% static '/media/logo/mark.png' %}" alt="RAD Logo mark" title="Radical Action Democracy" />
     </a>
 
     <a href="#menu" class="header__nav-toggle">
