@@ -27,5 +27,5 @@ boto
 mysqlclient
 libsass 
 django-compressor 
-django-sass-processor
+#django-sass-processor
 
