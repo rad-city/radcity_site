@@ -1,12 +1,12 @@
 {% load cms_tags %}
-
+{% load staticfiles %}
 <!-- FOOTER -->
 <footer class="footer">
   <div class="wrapper wrapper--wide">
     <div class="footer__content">
 
       <a href="/" class="footer__logo">
-        <img class="footer__logo-img" src="/media/logo/logo.png" alt="RAD Logo mark" title="Radical Action Democracy" />
+        <img class="footer__logo-img" src="{% static '/media/logo/logo.png' %}" alt="RAD Logo mark" title="Radical Action Democracy" />
       </a>
 
       <section class="footer__social">
@@ -14,17 +14,17 @@
         <ul class="footer__social-list">
           <li>
             <a href="#facebook" class="footer__social-link">
-              <img class="footer__social-img" src="/media/social/facebook.svg" alt="Facebook" title="Like us on Facebook" />
+              <img class="footer__social-img" src="{% static '/media/social/facebook.svg' %}" alt="Facebook" title="Like us on Facebook" />
             </a>
           </li>
           <li>
             <a href="#twitter" class="footer__social-link">
-              <img class="footer__social-img" src="/media/social/twitter.svg" alt="Twitter" title="Follow us on Twitter" />
+              <img class="footer__social-img" src="{% static '/media/social/twitter.svg' %}" alt="Twitter" title="Follow us on Twitter" />
             </a>
           </li>
           <li>
             <a href="#instagram" class="footer__social-link">
-              <img class="footer__social-img" src="/media/social/instagram.svg" alt="Instagram" title="Follow us on Instagram" />
+              <img class="footer__social-img" src="{% static '/media/social/instagram.svg' %}" alt="Instagram" title="Follow us on Instagram" />
             </a>
           </li>
         </ul>
