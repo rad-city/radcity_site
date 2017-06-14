@@ -42,7 +42,7 @@
         <li>
           <a href="#feature" class="features__link">
             <article class="features__item">
-              <img class="features__img" src="{% static '/media/features/planet.svg' %}{% static '" alt="Book" />
+              <img class="features__img" src="{% static '/media/features/planet.svg' %}" alt="Book" />
               <h1 class="features__title">About <br/>RAD</h1>
               <p class="features__desc">Our mission, history, and plans for the future. </p>
               <figure class="features__arrow"></figure>
@@ -119,3 +119,7 @@
 </main>
 <!-- /MAIN -->
 {% endblock content %}
+{% block js %}
+<script type="text/javascript" src="{% static 'tag-rad-website-frontend-2017/src/script/script.js' %}"></script>
+
+{% endblock js %}
