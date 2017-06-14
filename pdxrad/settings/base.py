@@ -135,7 +135,7 @@ INSTALLED_APPS += (
     'bootstrap3',
     'djangocms_forms',
     'pdxrad',
-    'sass_processor',
+#    'sass_processor',
 )
 
 LANGUAGES = (
