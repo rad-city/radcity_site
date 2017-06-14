@@ -1,4 +1,5 @@
-{% load cms_tags staticfiles sekizai_tags menu_tags sass_tags %}
+{% load cms_tags staticfiles sekizai_tags menu_tags %}
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="msapplication-tap-highlight" content="no" />
@@ -29,6 +30,6 @@
 
 <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
 
-<link rel="stylesheet" href="{% sass_src 'tag-rad-website-frontend-2017/src/style/style.scss' %}" />
+<link rel="stylesheet" href="{% static 'tag-rad-website-frontend-2017/src/style/style.css' %}" />
 
 <script type="text/javascript" src="{% static 'tag-rad-website-frontend-2017/src/script/script.js' %}"></script>
