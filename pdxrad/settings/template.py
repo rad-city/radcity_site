@@ -33,7 +33,7 @@ EMAIL_PORT = 587
 DEFAULT_FROM_EMAIL = 'admin@example.com'
 
 #Media
-MEDIA_ROOT = '/home/user/media/'
+MEDIA_ROOT = '<absolute path>/media/'
 MEDIA_URL = '/media/'
 
 
