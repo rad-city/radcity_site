@@ -172,6 +172,11 @@ CMS_TEMPLATES = (
 
 )
 
+DJANGOCMS_FORMS_TEMPLATES = (
+    ('djangocms_forms/form_template/default.html', ('Default')),
+    ('rad-tag-2017/forms/signup.html', ('RAD')),
+)
+
 # DJANGOCMS_FORMS_TEMPLATES = (
 #     ('djangocms_forms/form_template/default.html', ('Default')),
 #     ('form/bootstrap-default.html', ('Bootstrap Default')),
