@@ -135,6 +135,7 @@ INSTALLED_APPS += (
     'bootstrap3',
     'djangocms_forms',
     'pdxrad',
+#    'sass_processor',
 )
 
 LANGUAGES = (
@@ -167,16 +168,20 @@ CMS_LANGUAGES = {
 CMS_TEMPLATES = (
     ## Customize this
     ('page.html', 'Basic Page'),
-    ('front-page/base.html', 'Landing Page'),
-    ('rad-welcome/base.html', 'RAD Welcome')
+    ('rad-tag-2017/index.html', 'RAD 2017')
 
 )
 
 DJANGOCMS_FORMS_TEMPLATES = (
     ('djangocms_forms/form_template/default.html', ('Default')),
-    ('form/bootstrap-default.html', ('Bootstrap Default')),
-    ('form/rad-signup.html', ('RAD Signup')),
+    ('rad-tag-2017/forms/signup.html', ('RAD')),
 )
+
+# DJANGOCMS_FORMS_TEMPLATES = (
+#     ('djangocms_forms/form_template/default.html', ('Default')),
+#     ('form/bootstrap-default.html', ('Bootstrap Default')),
+#     ('form/rad-signup.html', ('RAD Signup')),
+# )
 
 CMS_PERMISSION = True
 

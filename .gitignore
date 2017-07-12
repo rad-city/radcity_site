@@ -1,10 +1,13 @@
+/build/
 /static/
 env/
 migrations/
 __pycache__/
-media/
 *.db
 *.pyc
+*.sql
+
+#Custom Settings Files
 pdxrad/settings/local.py 
 pdxrad/settings/staging.py
 pdxrad/settings/production.py

@@ -1,16 +1,12 @@
-{% load static cms_tags menu_tags %}
-<!-- Navigation -->
-    <div class="head">
-      <div class="head-brand">
-        <img class="head-brand-logo" src="{% static 'images/logo.svg' %}" />
-        <h1 class="head-brand-text">
-          Reimagining<br/>
-          Active<br/>
-          Democracy
-        </h1>
-      </div>
-      <div class="head-navbar">
-        {% show_menu 0 1 100 100 "menu/rad-menu.html" %}
-      </div>
-      <br class="clear" />
-    </div>
+{% load static cms_tags menu_tags staticfiles %}
+<header class="header">
+  <div class="wrapper wrapper--wide">
+    <a href="/" class="header__logo">
+      <img class="header__logo-img" src="{% static '/media/logo/mark.png' %}" alt="RAD Logo mark" title="Radical Action Democracy" />
+    </a>
+
+    <a href="#menu" class="header__nav-toggle">
+      <span class="header__nav-toggle-gfx"></span>
+    </a>
+  </div>
+</header>

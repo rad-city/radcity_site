@@ -9,20 +9,15 @@
     </head>
     <body>
         {% cms_toolbar %}
-        <div class="container">
         {% block navbar %}
             {% include 'base/navbar.html' %}
         {% endblock navbar %}
         {% block content %}
         {% endblock content %}
-        </div>
 
         {% block footer %}
             {% include 'base/footer.html' %}
         {% endblock footer %}
-        <script src="{% static 'landing-page/js/jquery.js' %}"></script>
-        <script src="{% static 'landing-page/js/bootstrap.min.js' %}"></script>
         {% render_block "js" %}
-
     </body>
 </html>

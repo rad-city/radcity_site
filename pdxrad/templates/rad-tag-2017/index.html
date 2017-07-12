@@ -1,0 +1,78 @@
+{% extends "base/base.html" %}
+{% load cms_tags staticfiles %}
+
+{% block title %}HERPDERP{% endblock title %}
+
+{% block content %}
+<main class="main">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__content">
+      <div class="wrapper">
+        <figure class="hero__gfx">
+          <img class="hero__img" src="{% static '/media/logo/logo.svg' %}" alt="RAD Logo" title="Radical Action Democracy" />
+        </figure>
+
+        <div class="hero__text">
+          {% placeholder ' Mission Statement' %}
+        </div>
+      </div>
+    </div>
+
+    <a href="#scroll-down" class="hero__arrow arrow"></a>
+  </section>
+  <!-- /HERO -->
+
+
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="wrapper">
+      <ul class="features__list">
+        {% placeholder 'Features' %}
+      </ul>
+    </div>
+  </section>
+  <!-- FEATURES -->
+
+
+
+  <!-- TITLE -->
+  <header class="title title--inverted title--bg">
+    <h2 class="title__content">
+      History
+    </h2>
+  </header>
+  <!-- /TITLE -->
+
+
+
+  <!-- TEXT -->
+  <header class="text text--inverted" style="background-image: url({% static '/media/title/bg-history.jpg' %})">
+    <div class="wrapper">
+      <div class="text__content">
+        <div class="wysiwyg">
+          {% placeholder 'History' %}
+        </div>
+      </div>
+      <a href="#about" class="text__c2a btn">
+        About
+        <span class="btn__arrow"></span>
+      </a>
+    </div>
+  </header>
+  <!-- /TEXT -->
+
+
+
+{% placeholder 'SignUp' %}
+
+
+
+</main>
+<!-- /MAIN -->
+{% endblock content %}
+{% block js %}
+<script type="text/javascript" src="{% static 'tag-rad-website-frontend-2017/src/script/script.js' %}"></script>
+
+{% endblock js %}
