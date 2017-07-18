@@ -28,3 +28,9 @@ python manage.py runserver
 After that you should be able to view the site in the browser at `http://localhost:8000`
 
 *If you're running locally, name it `local.py`, otherwise you'll need to create an `environment.py` file in root and change the `DJANGO_SETTINGS_MODULE` variable
+
+
+```
+. env/bin/activate
+python manage.py runserver
+```
