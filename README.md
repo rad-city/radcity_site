@@ -14,6 +14,7 @@ RAD City Website
 4. In your project's root, type the following:
 
 ```
+. ./env/bin/activate
 python manage.py makemigrations
 python manage.py migrate
 python manage.py createsuperuser
