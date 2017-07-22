@@ -168,13 +168,16 @@ CMS_LANGUAGES = {
 CMS_TEMPLATES = (
     ## Customize this
     ('page.html', 'Basic Page'),
-    ('rad-tag-2017/index.html', 'RAD 2017')
+    ('rad-tag-2017/index.html', 'RAD Home'),
+    ('rad-tag-2017/required-reading.html', 'Required Reading'),
+    ('rad-tag-2017/contact.html', 'Contact')
 
 )
 
 DJANGOCMS_FORMS_TEMPLATES = (
     ('djangocms_forms/form_template/default.html', ('Default')),
-    ('rad-tag-2017/forms/signup.html', ('RAD')),
+    ('rad-tag-2017/forms/signup.html', ('Subscribe')),
+    ('rad-tag-2017/forms/contact.html', ('Contact')),
 )
 
 # DJANGOCMS_FORMS_TEMPLATES = (
