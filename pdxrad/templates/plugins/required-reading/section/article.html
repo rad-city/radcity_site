@@ -1,0 +1,9 @@
+{% load cms_tags %}
+
+<div class="block-copy__text">
+    {{ instance.description }}
+</div>
+
+{% placeholder 'more stuff' %}
+
+<a href="{{ instance.link }}" target="_blank" class="block-copy__link">{{ instance.title }}</a>
