@@ -7,7 +7,7 @@ from .models import Feature
 
 class FeaturePlugin(CMSPluginBase):
     model = Feature
-    name = _("Feature Plugin")
+    name = _("RAD Feature Plugin")
     render_template = "plugins/feature.html"
     cache = False
 

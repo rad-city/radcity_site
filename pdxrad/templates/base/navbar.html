@@ -1,12 +1,38 @@
 {% load static cms_tags menu_tags staticfiles %}
+<!-- HEADER -->
+<!--
+    The header is the same on all pages
+-->
 <header class="header">
-  <div class="wrapper wrapper--wide">
-    <a href="/" class="header__logo">
-      <img class="header__logo-img" src="{% static '/media/logo/mark.png' %}" alt="RAD Logo mark" title="Radical Action Democracy" />
-    </a>
+    <div class="wrapper wrapper--wide">
+        <a href="/" class="header__logo">
+            <img class="header__logo-img" src="{% static '/media/logo/mark.png' %}" alt="RAD Logo mark" title="Radical Action Democracy" />
+        </a>
 
-    <a href="#menu" class="header__nav-toggle">
-      <span class="header__nav-toggle-gfx"></span>
-    </a>
-  </div>
+        <a href="#menu" class="header__nav-toggle">
+            <span class="header__nav-toggle-gfx"></span>
+        </a>
+    </div>
 </header>
+<!-- /HEADER -->
+
+
+
+<!-- DRAWER -->
+<!--
+    The drawer is structurally the same on all pages,
+    although nav links representing the active page should
+    have the `nav__link--active` class.
+-->
+<aside class="drawer">
+    <div class="drawer__content">
+        <div class="wrapper wrapper--wide">
+            <nav class="nav">
+                <ul class="nav__list">
+                    {% show_menu 0 100 100 100 "rad-tag-2017/menu.html" %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</aside>
+<!-- /DRAWER -->

@@ -1,6 +1,6 @@
 {% load cms_tags staticfiles sekizai_tags menu_tags %}
 <!doctype html>
-<html>
+<html class="no-js" lang="en">
     <head>
         {% block head %}
             {% include 'base/head.html' %}
@@ -19,5 +19,6 @@
             {% include 'base/footer.html' %}
         {% endblock footer %}
         {% render_block "js" %}
+        <script type="text/javascript" src="{% static 'script.0.1.0.js' %}"></script>
     </body>
 </html>
