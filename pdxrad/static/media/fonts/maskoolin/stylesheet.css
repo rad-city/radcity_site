@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'maskoolinalt';
-    src: url('maskoolin_alt-webfont.woff2') format('woff2'),
-         url('maskoolin_alt-webfont.woff') format('woff');
+    src: url('./maskoolin_alt-webfont.woff2') format('woff2'),
+         url('./maskoolin_alt-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'maskoolinregular';
-    src: url('maskoolin-webfont.woff2') format('woff2'),
-         url('maskoolin-webfont.woff') format('woff');
+    src: url('./maskoolin-webfont.woff2') format('woff2'),
+         url('./maskoolin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
