@@ -502,18 +502,6 @@ template {
 /**
 * [4] Base
 */
-/**
- * Fonts
- *
- * @section Base
- * @author ljd
- */
-@font-face {
-  font-family: 'maskoolinregular';
-  src: url("./media/fonts/maskoolin/maskoolin-webfont.woff2") format("woff2"), url("./media/fonts/maskoolin/maskoolin-webfont.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
 
 /**
 * Document
